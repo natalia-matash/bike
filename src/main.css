@@ -1,3 +1,19 @@
+[class*=__container] {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 744px) {
+  [class*=__container] {
+    padding: 0 72px;
+  }
+}
+@media (min-width: 1260px) {
+  [class*=__container] {
+    padding: 0 120px;
+  }
+}
+
 .page {
   font-family: "Poppins", sans-serif;
   font-style: normal;
