@@ -37,3 +37,154 @@
     margin: 0;
   }
 }
+
+.header {
+  background-image: url(../img/background/header-small.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    background-image: url(../img/background/header-large.png);
+    background-position: center;
+  }
+
+  &__content {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 30px 0 88px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include onTablet {
+      padding: 34px 0 130px;
+    }
+
+    @include onDesctop {
+      padding: 36px 0 203px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+
+    @include onTablet {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    @include onTablet {
+      font-size: 64px;
+    }
+
+    @include onDesctop {
+      font-size: 80px;
+    }
+  }
+
+  &__icon-phone{
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__icon-link {
+    display: none;
+
+    @include onDesctop {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+
+
+      display: block;
+      width: max-content;
+      padding-right: 12px;
+
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;  
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  &__icon-phone:hover &__icon-link {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.logo {
+
+  &__link {
+    display: block;
+    width: 130px;
+    height: 38px;
+
+    @include onTablet {
+      width: 187px;
+      height: 56px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+.icon {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  &--phone {
+    background-image: url(../img/icons/phone.svg);
+  }
+
+  &--menu {
+    background-image: url(../img/icons/menu.svg);
+    transition: background-image 0.3s;
+
+    &:hover {
+      background-image: url(../img/icons/menu-hover.svg);
+    }
+  }
+}
+
+
+
