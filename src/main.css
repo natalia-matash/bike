@@ -425,4 +425,139 @@
   line-height: 140%;
 }
 
+.details {
+  margin-bottom: 80px;
+}
+@media (min-width: 744px) {
+  .details {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1260px) {
+  .details {
+    margin-bottom: 180px;
+  }
+}
+.details__title {
+  margin: 0 0 48px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  text-transform: capitalize;
+}
+@media (min-width: 744px) {
+  .details__title {
+    font-size: 48px;
+    line-height: 100%;
+  }
+}
+@media (min-width: 1260px) {
+  .details__title {
+    font-size: 64px;
+  }
+}
+.details__item {
+  margin-bottom: 40px;
+}
+@media (min-width: 744px) {
+  .details__item {
+    margin: 0 auto 48px;
+    width: 600px;
+  }
+}
+@media (min-width: 1260px) {
+  .details__item {
+    width: 1020px;
+  }
+}
+.details__photos {
+  margin-bottom: 16px;
+  display: flex;
+  column-gap: 20px;
+}
+@media (min-width: 744px) {
+  .details__photos {
+    column-gap: 24px;
+  }
+}
+.details__photo {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex: 1 1 50%;
+  min-width: 130px;
+  max-height: 200px;
+  transition: transform 0.3s;
+}
+.details__photo::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.details__photo:hover {
+  transform: scale(1.05);
+}
+@media (min-width: 744px) {
+  .details__photo {
+    max-height: 187px;
+  }
+  .details__photo--big {
+    flex: 1 1 70%;
+  }
+  .details__photo--small {
+    flex: 1 1 30%;
+  }
+}
+@media (min-width: 1260px) {
+  .details__photo {
+    max-height: 320px;
+  }
+}
+.details__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.details__name {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+.details__link {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  background: #fff;
+  border-radius: 40px;
+  color: #1d1d1d;
+  transition: box-shadow 0.3s;
+}
+.details__link:hover {
+  box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+}
+.details__link:active {
+  box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
+}
+@media (min-width: 744px) {
+  .details__link {
+    width: 392px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1260px) {
+  .details__link {
+    width: 324px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
