@@ -754,3 +754,20 @@ $colorAccent: #1d1d1d;
   }
 }
 
+.footer {
+  height: 200px;
+  background-image: url(../img/background/footer-small.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    height: 480px;
+    background-image: url(../img/background/footer-large.png);
+  }
+
+  @include onDesctop {
+    height: 555px;
+  }
+}
+

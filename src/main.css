@@ -680,4 +680,23 @@
   box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
 }
 
+.footer {
+  height: 200px;
+  background-image: url(../img/background/footer-small.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 744px) {
+  .footer {
+    height: 480px;
+    background-image: url(../img/background/footer-large.png);
+  }
+}
+@media (min-width: 1260px) {
+  .footer {
+    height: 555px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
