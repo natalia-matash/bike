@@ -682,8 +682,14 @@ $colorAccent: #1d1d1d;
     text-decoration: none;
     color: inherit;
 
+    transition: font-weight 0.3s;
+
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      font-weight: 600;
     }
   }
 }
