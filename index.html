@@ -180,7 +180,7 @@
       </div>
     </section>
 
-    <section class="details" id="details">
+    <section class="details" id="details" hidden>
       <div class="details__container">
         <h2 class="details__title">The details</h2>
 
@@ -256,8 +256,65 @@
         <a class="details__link" href="#">Explore</a>
       </div>
     </section>
-  </main>
 
+    <section class="contacts">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Contact us</h2>
+        <div class="contacts__information">
+          <form class="contacts__form form" action="#">
+            <input
+              type="text"
+              class="form__field"
+              placeholder="Name"
+              name="name"
+              autocomplete="off"
+              required
+            >
+
+            <input
+              type="email"
+              class="form__field"
+              placeholder="Email"
+              name="email"
+              autocomplete="off"
+              required
+            >
+            <textarea
+              class="form__field form__field--textarea"
+              placeholder="Message"
+              name="textarea"
+              autocomplete="off"
+              required></textarea>
+
+              <button class="form__button" type="submit">
+                Send
+              </button>
+          </form>
+
+          <div class="contacts__details">
+            <div class="contacts__description">Phone</div>
+            <a class="contacts__info" href="tel:+1 234 5555-55-55">+1 234 5555-55-55</a>
+
+            <div class="contacts__description">Email</div>
+            <a class="contacts__info" href="mailto:hello@miami.com">hello@miami.com</a>
+
+            <div class="contacts__description">Address</div>
+            <a 
+              class="contacts__info" 
+                href="https://goo.gl/maps/78tFxqrEKcmQGbcW7"
+                target="_blank"
+                rel="noopener">
+              400 first ave.
+              <br>
+              suite 700
+              <br>
+              Minneapolis, MN 55401
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="./src/script.js"></script>
 </body>
 </html>
