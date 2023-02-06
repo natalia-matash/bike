@@ -93,6 +93,10 @@ $colorAccent: #1d1d1d;
 
   &__body {
     margin: 0;
+
+    &--with-menu {
+      overflow: hidden;
+    }
   }
 }
 
